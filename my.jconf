@@ -1,0 +1,47 @@
+-nolog
+#-logfile my.log
+-input stdin
+-cutsilence
+-realtime
+-quiet
+-d mod_envr_gmm/ENVR-v5.3.lm
+-v mod_envr_gmm/ENVR-v5.3.dct
+-sepnum 150
+-forcedict
+-h mod_envr_gmm/ENVR-v5.3.am
+-hlist mod_envr_gmm/ENVR-v5.3.phn
+-tmix 2
+-spmodel "sp"
+-multipath
+#-gprune none
+-gprune safe
+#-iwcd1 max
+-iwcd1 best 3
+-smpFreq 16000
+-fsize 400
+-preemph 0.97
+-fbank 26
+-ceplif 22
+-rawe
+-enormal
+-escale 0.1
+-silfloor 50.0
+#-htkconf mod_envr_gmm/wav_config
+#-lmp 12 -6
+-lmp 10 0
+#-b 4000
+-b 1000
+#-lmp2 12 -6
+-lmp2 10 0
+-b2 360
+-sb 80
+-s 2000
+-m 8000 
+#-n 40 
+-n 1
+-lookuprange 5 
+-spsegment
+-walign
+-fallback1pass
+-no_ccd
+-iwsp
