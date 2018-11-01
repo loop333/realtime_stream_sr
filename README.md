@@ -1,4 +1,4 @@
-Realtime internet radio stream speech recognition with Julius
+Realtime internet radio stream speech recognition with Julius & ffmpeg
 
 Download Julius:
 https://github.com/julius-speech/julius/releases
